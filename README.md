@@ -1,35 +1,44 @@
 # Portfolio Vue.js
 
-Ce portfolio a été développé en **Vue.js 3** avec l'API Composition et le bundle **Vite** pour une expérience rapide et optimisée.
+Ce portfolio a été développé en **Vue.js 3** avec l'API Composition et le bundle **Vite** afin d'optimiser les performances et le temps de chargement.
 
 ## Objectif
 
-Créer un portfolio interactif, agréable à lire et performant, tout en assurant une maintenance facile et une bonne évolutivité.
+Concevoir un portfolio interactif, bien structuré et performant, tout en facilitant la maintenance et l'ajout de nouvelles fonctionnalités.
 
 ## Choix techniques
 
-- **Frontend :** Développé en **Vue.js 3** avec **Vite** pour un rendu rapide et une structure modulaire.
-- **Backend :** Utilisation de **fonctions serverless Vercel** pour un déploiement simplifié sur Vercel.app.
-- **Stockage :** Données stockées dans des fichiers **JSON** pour une meilleure flexibilité.
-- **Emails & Sécurité :**
-  - **Google reCAPTCHA v3** pour éviter le spam.
-  - **EmailJS** pour l'envoi des emails sans backend dédié.
+- **Frontend :** Développé en **Vue.js 3** avec **Vite** pour des temps de compilation réduits et une architecture modulaire.
+  - **PrimeVue 3** pour les composants UI afin d'assurer une cohérence visuelle et une ergonomie optimisée.
+  - **Vue Router** pour la gestion des routes et de la navigation.
+  - **Pinia** pour la gestion centralisée de l'état.
+- **Backend :**
+  - Utilisation des **fonctions serverless Vercel** pour simplifier l'hébergement et la scalabilité.
+  - Stockage des données dans des fichiers **JSON** pour éviter une base de données et faciliter la modification du contenu.
+- **Sécurité et envoi d'emails :**
+  - **Google reCAPTCHA v3** intégré pour prévenir les envois automatiques indésirables.
+  - **EmailJS** utilisé pour permettre l'envoi d'emails sans nécessité d'un backend dédié.
+- **Internationalisation :**
+  - **Vue I18n** implémenté pour assurer la traduction complète du site et une meilleure accessibilité.
+- **Hébergement :**
+  - Hébergement sur **Vercel** pour un déploiement automatique et une gestion simplifiée.
+  - Domaine personnalisé géré via **OVH** (leochristophe.fr).
 
 ## Pages et fonctionnalités
 
-- **Accueil :** Présentation rapide des compétences et accès au CV.
-- **Parcours :** Expériences professionnelles et formations détaillées.
-- **Projets :** Showcase des projets réalisés.
-- **Compétences :** Aperçu des technologies et outils maîtrisés.
+- **Accueil :** Présentation succincte des compétences et accès au CV en téléchargement.
+- **Parcours :** Détail des expériences professionnelles et formations avec une mise en page chronologique.
+- **Projets :** Présentation des réalisations avec images et descriptions techniques.
+- **Compétences :** Liste des technologies et outils utilisés, illustrée par des indicateurs de maîtrise.
 - **Contact :**
-  - Formulaire sécurisé avec **reCAPTCHA v3** et **EmailJS**.
-  - Copie rapide des informations de contact.
-  - Identification de la ville.
+  - Formulaire de contact sécurisé avec **reCAPTCHA v3** et **EmailJS**.
+  - Fonctionnalité de copie rapide des coordonnées.
 
-## Optimisations et améliorations
+## Optimisations et améliorations prévues
 
-- Code optimisé pour de meilleures performances.
-- **Amélioration future :** Renforcement de l'expérience mobile.
+- Réduction du temps de chargement via compression et optimisation des assets.
+- Adaptation mobile avec un renforcement de l'expérience utilisateur sur petits écrans.
+- Ajout de tests unitaires pour mieux prévoir le comportement après changements
 
 ## Installation et lancement
 
@@ -37,10 +46,10 @@ Créer un portfolio interactif, agréable à lire et performant, tout en assuran
 # Installer les dépendances
 yarn install # ou npm install
 
-# Lancer le projet en développement
+# Lancer le projet en mode développement
 yarn dev # ou npm run dev
 
-# Build pour la production
+# Générer le build pour la production
 yarn build # ou npm run build
 ```
 
