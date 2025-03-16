@@ -11,7 +11,6 @@ Concevoir un portfolio interactif, bien structuré et performant, tout en facili
 - **Frontend :** Développé en **Vue.js 3** avec **Vite** pour des temps de compilation réduits et une architecture modulaire.
   - **PrimeVue 3** pour les composants UI afin d'assurer une cohérence visuelle et une ergonomie optimisée.
   - **Vue Router** pour la gestion des routes et de la navigation.
-  - **Pinia** pour la gestion centralisée de l'état.
 - **Backend :**
   - Utilisation des **fonctions serverless Vercel** pour simplifier l'hébergement et la scalabilité.
   - Stockage des données dans des fichiers **JSON** pour éviter une base de données et faciliter la modification du contenu.
@@ -26,18 +25,16 @@ Concevoir un portfolio interactif, bien structuré et performant, tout en facili
 
 ## Pages et fonctionnalités
 
-- **Accueil :** Présentation succincte des compétences et accès au CV en téléchargement.
+- **Accueil :** Présentation succincte des passe temps et accès au CV en téléchargement.
 - **Parcours :** Détail des expériences professionnelles et formations avec une mise en page chronologique.
 - **Projets :** Présentation des réalisations avec images et descriptions techniques.
 - **Compétences :** Liste des technologies et outils utilisés, illustrée par des indicateurs de maîtrise.
 - **Contact :**
   - Formulaire de contact sécurisé avec **reCAPTCHA v3** et **EmailJS**.
-  - Fonctionnalité de copie rapide des coordonnées.
 
 ## Optimisations et améliorations prévues
 
-- Réduction du temps de chargement via compression et optimisation des assets.
-- Adaptation mobile avec un renforcement de l'expérience utilisateur sur petits écrans.
+- Meilleurs adaptation mobile avec un renforcement de l'expérience utilisateur sur petits écrans.
 - Ajout de tests unitaires pour mieux prévoir le comportement après changements
 
 ## Installation et lancement
